@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* INICIO DO HEADER */
+header {
+    /* BARRA VERDE DO MENU */
+    background-color: #027d7a;
+    height: 70px;
+    width: 100%;
+
+}
+
+.header--container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.header--container a {
+    text-decoration: none;
+}
+
+.menu-sanduiche img {
+    width: 50px;
+
+}
+
+.header--logo {
+    color: #FFF;
+    font-size: 30px;
+    font-family: "Lobster Two", sans-serif;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+/* FIM DO HEADER */
+
+section {
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+.container {
+    padding-top: 50px;
+}
+.container a {
+    text-decoration: none;
+    color:inherit
+}
+
+.clientes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clientes img {
+    width: 150;
+    height: 120px;
+}
+
+.clientes,
+.consultas {
+    height: 150px;
+    width: 340px;
+    border-radius: 20px;
+    background-color: #027d7a;
+    color: #FFF;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 35px;
+}
+
+.funcio--sair {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 35px;
+}
+
+.funcionarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #004644;
+    text-align: center;
+
+}
+
+.sair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #002827;
+    text-align: center;
+}
