@@ -22,9 +22,21 @@ header {
     text-decoration: none;
 }
 
-.menu-sanduiche img {
-    width: 50px;
-
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.menu li a {
+    color:#d5d3d3;
+    font-size: arial;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.menu li a:hover {
+    color: #FFF;
+    font-size: 18px;
+    
 }
 
 .header--logo {
