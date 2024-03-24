@@ -15,19 +15,39 @@
 <body>
     <!-- INICIO DO HEADER -->
     <header>
-        <div class="header--container">
-            <a href="#">
-                <div class="header--logo">Dente facil</div>
-            </a> <!-- LOGO DO HEADER -->
-            <ul class="menu">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Agendamentos</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Funcionários </a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Serviços</a></li>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Dente Facil</h1>
+            </div>
+    
+    <!-- LOGO DO HEADER -->
+
+            <div class="nav-list">
+                <ul> <!-- INICIO LISTA DO MENU -->
+                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Agendamentos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Funcionarios </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                </ul>
+            </div>
+            <!-- FIM LISTA DO MENU -->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/images/menu.png" alt="menu"</button>
+            </div>
+        </nav>
+        <!-- FIM NAV-->
+        <div class="mobile-menu">
+            <ul> <!-- INICIO LISTA DO MENU-MOBILE-->
+                <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Agendamentos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Funcionarios </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
             </ul>
-            <!-- MENU SANDWICH -->
+            <!-- FIM LISTA DO MENU-MOBILE-->
         </div>
     </header>
     <!-- FIM DO HEADER -->
@@ -35,16 +55,22 @@
     <!-- INICIO DA SECTION -->
     <section>
         <div class="container">
+            <!-- INICIO CONTAINER -->
+            <!-- DIV FUNCIONARIOS E IMAGEM -->
             <div class="clientes"><a href="">Clientes</a>
                 <img src="/assets/images/img1.png">
             </div>
-            <div class=funcio--sair> <!-- DIV PARA USAR O FLEXBOX COM AS DIVS "FUNCIONÁRIOS E SAIR" -->
+            <div class=funcionarios--sair> <!-- DIV PARA USAR O FLEXBOX COM AS DIVS "FUNCIONÁRIOS E SAIR" -->
                 <div class="funcionarios"><a href="#">Funcionarios</a></div>
                 <div class="sair"><a href="#">Sair</a></div>
             </div>
+
+            <!-- DIV CONSULTAS -->
             <div class="consultas"><a href="#">Consultas</a></div>
         </div>
     </section>
+    <!-- FIM DA SECTION -->
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

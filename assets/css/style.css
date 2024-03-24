@@ -1,86 +1,111 @@
 body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* INICIO DO HEADER */
 header {
-    /* BARRA VERDE DO MENU */
     background-color: #027d7a;
-    height: 70px;
-    width: 100%;
+    /* BARRA VERDE DO MENU */
+    box-shadow: 0px 3px 10px #002827;
 
 }
 
-.header--container {
+.nav-bar {
+    /* INICIO BARRA DE NAVEGAÇÃO */
+    height: 30px;
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+
 }
 
-.header--container a {
-    text-decoration: none;
-}
-
-.menu {
+.logo {
     display: flex;
-    gap: 30px;
-    list-style-type: none;
-}
-.menu li a {
-    color:#d5d3d3;
-    font-size: arial;
-    font-size: 17px;
-    transition: 0.3s;
-}
-.menu li a:hover {
-    color: #FFF;
-    font-size: 18px;
-    
+    align-items: center;
 }
 
-.header--logo {
+.logo h1 {
     color: #FFF;
     font-size: 30px;
     font-family: "Lobster Two", sans-serif;
-    text-shadow: 1px 1px 2px black;
-
+    ;
+    text-shadow: 1px 2px 5px black;
 }
 
+.nav-list {
+    /* INICIO DIV LISTA DO MENUY */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    /* LISTA DO MENU */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* FIM MENU DE NAVEGAÇÃO */
+
+/* PARTE MENU MOBILE */
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* FIM PARTE MENU MOBILE */
 /* FIM DO HEADER */
 
+/* INICIO DA SECTION */
 section {
     height: 100vh;
-}
-
-section {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-
 }
 
-.container {
+.container{
+    /* INICIO DO CONTAINER */
     padding-top: 50px;
 }
+
 .container a {
     text-decoration: none;
-    color:inherit
+    color: inherit
 }
 
 .clientes {
+    /* DIV DOS CLIENTES */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .clientes img {
+    /* IMAGEM DA DIV CLIENTES */
     width: 150;
     height: 120px;
 }
 
 .clientes,
 .consultas {
+    /* ESTILIZAÇÅO DA DIV CLIENTES E CONSULTAS */
     height: 150px;
     width: 340px;
     border-radius: 20px;
@@ -90,7 +115,7 @@ section {
     font-size: 35px;
 }
 
-.funcio--sair {
+.funcionarios--sair {
     display: flex;
     gap: 30px;
     margin-top: 20px;
@@ -121,4 +146,65 @@ section {
     border-radius: 20px;
     background-color: #002827;
     text-align: center;
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        align-items: center;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .mobile-menu.open {
+        display: flex;
+    }
+    
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 0.8rem;
+    }
+/* 
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
 }
